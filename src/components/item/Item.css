@@ -1,0 +1,43 @@
+.item-wrapper {
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+
+  padding: 10px;
+  margin: 5px auto;
+  border-radius: 5px;
+  border: 1px solid rgba(121, 121, 121, 0.3);
+  position: relative;
+}
+.item-wrapper p {
+  margin-left: 10px;
+}
+
+.item-wrapper button {
+  height: 100%;
+  display: none;
+  border-radius: 5px;
+  border: none;
+  padding: 5px 15px;
+  background-color: rgb(255, 196, 0);
+  color: white;
+  position: absolute;
+  right: 0;
+}
+.item-wrapper button:hover {
+  background-color: rgb(219, 168, 0);
+}
+
+.item-wrapper:hover {
+  background-color: rgba(240, 255, 255, 0.5);
+}
+.item-wrapper:hover button {
+  display: block;
+}
+
+.item-wrapper input[type="checkbox"]:checked + p {
+  text-decoration: line-through;
+  color: rgb(252, 252, 252);
+}
